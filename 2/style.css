@@ -1,0 +1,52 @@
+html{
+	background: #136a8a;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container {
+	text-align:center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+button {
+	background: #999966;
+	border: 1px solid black;
+	border-radius: 2px;
+	-webkit-box-shadow: 6px 6px 21px 0px rgba(0,0,0,0.26);
+	-moz-box-shadow: 6px 6px 21px 0px rgba(0,0,0,0.26);
+	box-shadow: 6px 6px 21px 0px rgba(0,0,0,0.26);
+}
+button:hover {
+
+	
+}
+input{
+	border:1px solid #999966;
+	outline:none;
+	border-radius: 2px;
+	text-align:center;
+	-webkit-box-shadow: 6px 6px 21px 0px rgba(0,0,0,0.26);
+	-moz-box-shadow: 6px 6px 21px 0px rgba(0,0,0,0.26);
+	box-shadow: 6px 6px 21px 0px rgba(0,0,0,0.26);
+}
+input:focus{
+	border:1px solid #999966;
+	outline:none;
+	border-radius: 2px;
+}
+input:hover{
+	border:1px solid #999966;
+	outline:none;
+	border-radius: 2px;
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	right:0;
+	left:0;
+	padding: 1rem;
+}
