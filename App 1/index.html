@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no">
+    <meta http-equiv="x-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Third party logistic solutions in Lithuania">
+    <meta name="author" content="Andrius Svylas">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet">
+    <title>LEARN VUE</title>
+  </head>
+  <body>
+
+    <div id="vue-app">
+      <a v-on:click.prevent="click" href="http://www.google.com">Google</a>
+      <ul>
+        <div>{{name}}</div>
+        <input v-model="name" type="text" v-on:keyup.enter="logName">
+        <div>{{age}}</div>
+        <input v-model="age" type="text" v-on:keyup.enter="logAge">
+        <p></p>
+        <p></p>
+        <li>{{name}}</li>
+        <li>{{age}}</li>
+        <li>{{job}}</li>
+        <li>{{greet()}}</li>
+        <a v-bind:href="website">The Net</a>
+        <input type="text" v-bind:value="job">
+        <li v-html="websiteTag"></li>
+        <button v-on:click.once="add(1)">+1</button>
+        <button v-on:click="subtract(1)">-1</button>
+        <button v-on:dblclick="add(10)">+10</button>
+        <button v-on:dblclick="subtract(10)">-10</button>
+        <div class="canvas" v-on:mousemove="updateXY">{{x}}, {{y}}</div>
+      </ul>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
