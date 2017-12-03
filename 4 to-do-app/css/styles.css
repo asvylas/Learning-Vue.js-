@@ -1,0 +1,16 @@
+html {
+  margin: 0;
+  padding: 10px;
+  font-family: 'Oswald', sans-serif;
+}
+body {
+  background: white;  /* fallback for old browsers */
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+.completed {
+  text-decoration: line-through;
+}
