@@ -58,9 +58,9 @@ const app = new Vue({
   template:
 	 `<div>
       <div>
-				<div>
+				<div id="button-tooltip">
 					<input type="number" placeholder="5" id="message-id">
-					<p class="tooltiptext">lalala</p>
+					<span class="tooltiptext">Enter a number between 1 and 40</span>
 				</div>
 					<button v-on:click="getData">Get messages</button>
 			 			<div v-for="name in list">

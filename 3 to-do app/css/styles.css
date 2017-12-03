@@ -1,6 +1,7 @@
-document {
+html {
   margin: 0;
-  padding: 0;
+  padding: 10px;
+  font-family: 'Oswald', sans-serif;
 }
 body {
   background: white;  /* fallback for old browsers */
@@ -25,13 +26,15 @@ body {
   padding: 5px;
 }
 .tooltiptext {
-  padding: 2px 6px;
+  padding: 0 5px;
   color: white;
-  display: inline-block;
-  background: black;
-  border-radius: 5px;
   display: none;
+  background: white;
+  border-radius: 5px;
+  transition: 0s background-color;
 }
-#message-id:hover .tooltiptext{
-  display: inline;
+#button-tooltip:hover .tooltiptext{
+  background-color:black;
+  transition-delay:1s;
+  display: inline-block;
 }
