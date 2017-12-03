@@ -37,14 +37,18 @@ const app = new Vue({
     },
     addTask(){
       let newTaskTitle = document.querySelector('input#submit-task').value
-      let newTask =
-        {
-          "userId": 1,
-          "id": app.list.length+1,
-          "title": newTaskTitle,
-          "completed": false
-        }
-      app.list.push(newTask)
+      if (newTaskTitle == "") {
+        console.log("Cannot add an empty task")
+      } else {
+        let newTask =
+          {
+            "userId": 1,
+            "id": app.list.length+1,
+            "title": newTaskTitle,
+            "completed": false
+          }
+        app.list.push(newTask)
+      }
     },
   },
   template:
